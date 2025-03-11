@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Art Gallery TypeScript React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание.
+Этот проект представляет собой веб-приложение, разработанное с использованием React и TypeScript. Приложение включает в себя несколько страниц, таких как главная страница, страница пользователя и корзина покупок. Основная функциональность заключается в отображении галереи произведений искусства, добавлении их в корзину и управлении корзиной.
 
-## Available Scripts
+## Основные функции.
+  1. Галерея: Отображение доступных для покупки произведений искусства.
+  2. Корзина: Добавление и удаление товаров из корзины.
+  3. Маршрутизация: Использование react-router-dom для навигации между страницами.
+  4. Стилизация: Использование SCSS для стилизации компонентов.
 
-In the project directory, you can run:
+## Установка.
+  1. Клонируйте репозиторий:
+     ###  git clone https://github.com/bellatrisa1/art-gallery-ts-react-app.git
+  2. Установите зависимости:
+     ### cd ts-react-app
+     ### npm install
+  3. Запустите приложение:
+       ### npm start
 
-### `npm start`
+Приложение запистится на http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Использование.
+  1. Главная страница: Отображает компоненты Hero, About, Gallery, Auction, Delivery и Contact.
+  2. Страница пользователя: Доступна по адресу /user.
+  3. Корзина: Доступна по адресу /cart, отображает добавленные товары и позволяет их удалять.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Структура проекта.
+  1. App.tsx: Основной компонент приложения, управляет состоянием корзины и маршрутизацией.
+  2. components: Папка с компонентами, такими как Header, Hero, About, Gallery, Auction, Delivery, Contact и Footer.
+  3. pages: Папка со страницами, такими как User и Cart.
 
-### `npm test`
+## Технологии.
+  1. React: Библиотека для создания пользовательских интерфейсов.
+  2. TypeScript: Язык программирования, добавляющий статическую типизацию к JavaScript.
+  3. React Router: Библиотека для маршрутизации в React-приложениях.
+  4. SCSS: Препроцессор CSS для улучшения стилизации.
+  5. Axios: Библиотека для выполнения HTTP-запросов.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Будущие улучшения.
+  В будущем планируется добавить следующие функции:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  1. Полноценная работа с сервером: Интеграция с бэкендом для управления данными о товарах и пользователях.
+  2. Аутентификация: Реализация системы регистрации и входа пользователей.
+  3. Оптимизация производительности: Улучшение скорости загрузки и работы приложения.
+  4. Тестирование: Добавление unit-тестов и интеграционных тестов для повышения надежности кода.
+  5. Расширение функционала корзины: Добавление возможности изменения количества товаров в корзине.

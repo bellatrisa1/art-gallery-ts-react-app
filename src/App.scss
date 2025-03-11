@@ -1,0 +1,483 @@
+$primary-color: #6d6552;
+$secondary-color: #79553d;
+$text-color: #343030;
+$background-color: #f4f4f4;
+$header-background: #f0f8ff;
+$hero-background: #5a5c5b;
+$button-color: #789799;
+$button-hover-color: #3d595c;
+$footer-background: #f0f8fe;
+
+// Общие стили
+* {
+  font-family: "Comfortaa", serif;
+  font-weight: normal;
+}
+
+body {
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+// Заголовки
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #424242;
+}
+
+// Шапка, навигация, поиск
+header {
+  font-family: "Comfortaa", serif;
+  background: $header-background;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+    input {
+      padding: 5px 12px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      margin-left: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .cart_btn,
+  .user_btn {
+    gap: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// Герой секция
+.hero {
+  background: url("../public//img//gallery4.webp") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: $hero-background;
+  padding: 200px 20px;
+
+  h1 {
+    font-family: "Comfortaa", serif;
+    font-size: 46px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: $button-color;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+// О нас
+.about {
+  padding: 50px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: "Comfortaa", serif;
+    color: #424242;
+    margin-bottom: 30px;
+    font-weight: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+// Контейнер
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 0;
+
+  p {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .style_p {
+    font-size: 10px;
+    font-style: italic;
+    color: $text-color;
+    margin-top: -30px;
+    margin-bottom: 50px;
+  }
+
+  .style_a {
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+// Галерея и аукцион
+.gallery,
+.auction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.auction-item,
+.gallery-item {
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+// Доставка
+.delivery {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #333;
+  }
+
+  p {
+    font-size: 15px;
+    color: #424242;
+  }
+}
+
+// Блок
+.block {
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px 0 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #444;
+  }
+}
+
+// Контакты
+.contact {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #FAEEDD;
+  background-size: cover;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    .social-icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      &.instagram {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png");
+      }
+
+      &.vk {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg");
+      }
+
+      &.telegram {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg");
+      }
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      margin-left: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #817066;
+      }
+    }
+
+    .btn-primary {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #817066;
+      }
+    }
+  }
+}
+
+// Футер
+footer {
+  background: $footer-background;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .cart_btn, .user_btn {
+        margin: 5px 0;
+    }
+
+    .gallery, .auction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item, .auction-item {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .gallery-item, .auction-item {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}

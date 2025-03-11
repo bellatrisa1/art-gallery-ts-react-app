@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Указывает версию ECMAScript для компиляции
+    "module": "commonjs", // Система модулей
+    "strict": true, // Включает все строгие проверки типов
+    "esModuleInterop": true, // Позволяет использовать `default` импорты из модулей ES
+    "skipLibCheck": true, // Пропускает проверку типов в библиотеках
+    "forceConsistentCasingInFileNames": true, // Проверяет согласованность регистра имен файлов
+    "outDir": "./dist", // Директория для выходных файлов
+    "rootDir": "./src", // Корневая директория входных файлов
+    "jsx": "react" // Поддержка JSX для React
+  },
+  "include": ["src/**/*"], // Включает все файлы в директории `src`
+  "exclude": ["node_modules", "**/*.test.ts"] // Исключает директорию `node_modules` и тестовые файлы
+}

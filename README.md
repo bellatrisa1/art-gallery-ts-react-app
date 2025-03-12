@@ -18,7 +18,7 @@
   3. Запустите приложение:
        ### npm start
 
-Приложение запистится на http://localhost:3000.
+Приложение запустится на http://localhost:3000.
 
 ## Использование.
   1. Главная страница: Отображает компоненты Hero, About, Gallery, Auction, Delivery и Contact.
